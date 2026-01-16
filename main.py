@@ -100,35 +100,25 @@ def parse(contents):
         state,
         zipcode,
         d["Phone"],
-        d[
-            "What are the names, relationship to you, and occupations of all the adults in your household?"
-        ],
-        d["How many children live in your household?"],
+        "",
+        "",
         d[
             "In which do you live? Single-family house, duplex, trailer home, condo, apartment, or other (specify)"
         ],
         d["Own or rent?"],
-        d["Do you have a fenced yard?"],
-        d["If other dogs, what breed(s), age(s) and gender(s)?"],
-        "cats",
-        d["Are the dogs spayed/neutered?"],
-        d[
-            "What date are you available to adopt and bring home your new family member?"
-        ],
-        d[
-            "If you saw a dog on our website that interests you, what is that dog’s name?"
-        ],
-        "unknown",
-        d[
-            "Please describe the ideal dog for you. Include age range, gender, breed (s), size and any other information that you think will help us match you with a rescue dog."
-        ],
-        d[
-            "Please describe your experience with dogs. Include any dogs owned, breeds, ages and description of experiences."
-        ],
-        d[
-            "What is maximum number of hours the dog would spend alone (without human supervision) per day?"
-        ],
-        d["What reasons would cause you to give up on or return the dog?"],
+        "",
+        d["If other dogs, what breed(s), age(s) and gender(s)?"]
+        if d.get("If other dogs, what breed(s), age(s) and gender(s)?")
+        else "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
     )
 
     delimited_string = ""
